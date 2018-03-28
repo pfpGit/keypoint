@@ -1,0 +1,160 @@
+.container{
+	margin: 0 auto;
+	width: 1200px;
+}
+.body{
+	padding: 70px 0px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+.container:before,.container:after{
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	position: relative;
+}
+.clearfix:before,clearfix:after{
+	content: '';
+	display: block;
+	height: 1px;
+	visibility: hidden;
+	clear: both;
+}
+.grid-3{
+	width: 33.3%;
+}
+.layout{
+	position: relative;
+}
+/**
+ * header
+ */
+.layout .header{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	min-height: 60px;
+	background:rgba(255,255,255,0.5);
+	box-shadow: 0 0 4px #CCCCCC;
+}
+.layout .header .logo{
+ 	height: 60px;
+}
+.layout .header .logo img{
+	height: 40px;
+	margin-top: 10px;
+}
+.layout .header .menu{
+	list-style: none;
+}
+.layout .header .menu li{
+	list-style: none;
+	line-height: 60px;
+	padding:0 20px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 10px;
+}
+.layout .header .menu li:after{
+	content: '';
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background:#092A5E;
+	transition: all .3s .1s;
+	opacity: 0;
+}
+.layout .header .menu li.active:after{
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+.layout .header .menu li:hover:after{
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+/**
+ * com
+ */
+.layout .content{
+	margin-top: 60px;
+}
+.layout .title{
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 0px;
+	color: #444;
+	font-family: "Microsoft YaHei";
+}
+.layout .sub-title{
+	font-size: 13px;
+	text-align: center;
+	color: #848484;
+	margin: 10px auto;
+	font-family: "Microsoft YaHei";
+}
+.layout .dec{
+	font-size: 13px;
+	text-align: center;
+	width: 80%;
+	color: #848484;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	font-family: "Microsoft YaHei";
+}
+.layout .com1 a{
+	display: block;
+	margin:0 25px;
+}
+.layout .com1 img{
+	width: 100%;
+}
+.line-title{
+	font-size: 16px;
+	height: 46px;
+	line-height: 46px;
+	color: #595959;
+	transition: all ease-out 0.2s;
+	border-bottom: 1px solid #E1E1E1;
+	position: relative;
+}
+.line-title:before{
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 1px;
+	background-color: #3C3C3C;
+	margin-top: 46px;
+	transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.line-title:hover:before{
+	width: 100%;
+}
+.txt{
+	color: #848484;
+	font-size: 13px;
+	line-height: 24px;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+/**
+ * footer
+ */
