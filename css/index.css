@@ -1,8 +1,0 @@
-.layout .banner{
-	height: 550px;
-}
-.layout .banner .slider{
-	height: 550px;
-	background: url(../img/index_banner1.jpg) no-repeat center center;
-	background-size: cover;
-}

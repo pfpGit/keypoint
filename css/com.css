@@ -4,9 +4,8 @@
 }
 .body{
 	padding: 70px 0px;
-  background: #fff;
-  position: relative;
-  z-index: 2;
+  	background: #fff;
+  	position: relative;
 }
 .container:before,.container:after{
 	content: '';
@@ -23,6 +22,7 @@
 }
 .clearfix{
 	position: relative;
+	overflow: hidden;
 }
 .clearfix:before,clearfix:after{
 	content: '';
@@ -31,11 +31,38 @@
 	visibility: hidden;
 	clear: both;
 }
+.grid{
+	margin-bottom: 40px;
+}
+.grid-2{
+	width: 50%;
+}
 .grid-3{
 	width: 33.3%;
 }
+.grid-4{
+	width: 25%;
+}
 .layout{
 	position: relative;
+}
+.more{
+    display: block;
+    height: 32px;
+    border: 1px solid #bbb;
+    width: 150px;
+    text-align: center;
+    line-height: 32px;
+    color:#bbb;
+    margin:0 auto;
+    transition: all 1s;
+}
+.more:hover{
+	border-color: 666;
+	color:#666;
+}
+.mt20{
+	margin-top: 20px;
 }
 /**
  * header
@@ -46,8 +73,9 @@
 	left: 0;
 	width: 100%;
 	min-height: 60px;
-	background:rgba(255,255,255,0.5);
+	background:rgba(255,255,255,1);
 	box-shadow: 0 0 4px #CCCCCC;
+	z-index: 99;
 }
 .layout .header .logo{
  	height: 60px;
@@ -91,6 +119,14 @@
 /**
  * com
  */
+.layout .banner{
+	height: 450px;
+}
+.layout .banner .slider{
+	height: 550px;
+	background: url(../img/index_banner1.jpg) no-repeat center center;
+	background-size: cover;
+}
 .layout .content{
 	margin-top: 60px;
 }
@@ -111,7 +147,7 @@
 	font-family: "Microsoft YaHei";
 }
 .layout .dec{
-	font-size: 13px;
+	font-size: 14px;
 	text-align: center;
 	width: 80%;
 	color: #848484;
@@ -119,11 +155,11 @@
 	margin-bottom: 10px;
 	font-family: "Microsoft YaHei";
 }
-.layout .com1 a{
+.layout .grid a{
 	display: block;
 	margin:0 25px;
 }
-.layout .com1 img{
+.layout .grid img{
 	width: 100%;
 }
 .line-title{
@@ -144,17 +180,54 @@
 	margin-top: 46px;
 	transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-.line-title:hover:before{
+.layout a:hover .line-title:before{
 	width: 100%;
 }
 .txt{
 	color: #848484;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 24px;
-	height: 50px;
 	overflow: hidden;
 	margin-top: 10px;
+}
+.pannel{
+	padding-top: 20px;
+}
+.index .about .title,.index .about .sub-title,.index .about .dec{
+	text-align: left;
+	margin-left: 0;
+}
+.index .about{
+	overflow: hidden;
+}
+.index .about .pannel{
+	margin:0 25px;
+}
+.index .about .img{
+	width: 350px;
+}
+.index .about .right{
+	margin-left: 400px;
+}
+.index .about .txt{
+	height: 150px;
+	overflow: hidden;
+}
+.index .about .more{
+	margin-left: 0;
+}
+.index .news .pic{
+	width: 150px;
+	height: 120px;
+}
+.index .news .right{
+	margin-left: 160px;
 }
 /**
  * footer
  */
+.footer{
+	text-align: center;
+	box-shadow: 0 0 4px #444;
+	padding: 40px 0;
+}
